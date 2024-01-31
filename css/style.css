@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+
+/* two main colors */
+
+:root {
+    --primary-color: #518db8;
+    --secondary-color: #9ac8b1;
+}
+
+
+* {
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+
+/* for general use - start */
+
+.titles {
+    text-align: center;
+}
+
+.btn,
+.register-button {
+    color: black;
+}
+
+.btn:hover {
+    color: black;
+    font-weight: bolder;
+}
+
+.button-primary {
+    background-color: var(--secondary-color);
+}
+
+.button-secondary {
+    background-color: var(--primary-color);
+}
+
+/* for general use - end */
+
+
+/* Header start */
+header {
+    background-color: white;
+}
+
+header .navbar-brand-box {
+    width: 340px;
+    justify-content: center;
+    color: var(--primary-color);
+}
+
+header .navbar-brand-box .navbar-img {
+    width: 100px;
+    height: 8vh;
+}
+
+header .navbar-brand-box,
+header #navbar {
+    display: flex;
+    align-items: center;
+}
+
+header #navbar {
+    width: 50vw;
+    justify-content: space-evenly;
+}
+
+header #navbar a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+header #navbar a:hover {
+    font-weight: bold;
+}
+
+#menu-bar {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* Navbar end */
+
+
+/* First page start */
+.entry-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-images {
+    width: 100vw;
+    height: 90vh;
+    object-fit: cover;
+}
+
+.introduction-message {
+    position: absolute;
+    top: 20vh;
+    left: 50vw;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+
+.introduction-message h1 {
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.introduction-message:hover {
+    font-weight: bolder;
+
+    color: var(--secondary-color);
+}
+
+/* First page end */
+
+
+/* Second page (courses) start*/
+.second-page {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cources-info {
+    padding-top: 10vh;
+}
+
+.second-page,
+.second-page .courses {
+    display: flex;
+    align-items: center;
+}
+
+.courses {
+    height: 80vh;
+    width: 75VW;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.second-page .cources-info,
+.second-page .courses-custom-packages {
+    text-align: center;
+}
+
+.courses-custom-packages {
+    width: 90vw;
+    margin: 40px;
+    padding-top: 20px;
+}
+
+.cources-info:hover,
+.card:hover {
+    transform: scale(1.05);
+    transition: 1s ease;
+}
+
+.second-page .courses .card .card-body,
+.second-page .courses-custom-packages {
+    background-color: var(--primary-color);
+}
+
+/* 2nd page (courses) end */
+
+
+/* 3rd page (holiday) start */
+
+#holiday {
+    padding-top: 40px;
+    height: 80vh;
+    display: grid;
+    align-content: space-around;
+}
+
+.holiday-main-part {
+    gap: 30px;
+    background-color: var(--primary-color);
+}
+
+.holiday-image {
+    width: 450px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.holiday-text {
+    width: 70vh;
+    padding: 30px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.holiday-main-part,
+.holiday-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 3rd page (holiday) end */
+
+
+/* 4th Page (shop) start */
+.shop {
+    padding-top: 40px;
+    height: 90vh;
+    display: grid;
+    align-content: center;
+}
+
+.shop-main-part {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* 4th Page (shop) end */
+
+
+/* 5th page (service) start */
+#service {
+    height: 70vh;
+    width: 100vw;
+    padding-top: 30px;
+    display: grid;
+    align-content: center;
+    background-color: var(--primary-color);
+
+}
+
+#service,
+.service-main-part {
+    justify-content: center;
+    gap: 30px;
+}
+
+.service-main-part {
+    display: flex;
+}
+
+.service-main-part img {
+    width: 500px;
+}
+
+.service-text {
+    display: grid;
+    align-content: center;
+    font-weight: bold;
+}
+
+.service-text ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+/* 5th page (service) end */
+
+
+/* 6th page (others) start */
+
+.others {
+    padding-top: 70px;
+    height: 100vh;
+}
+
+.others-main-part {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.others-main-part a,
+.others-main-part a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.card-secondary,
+.others img {
+    width: 400px;
+}
+
+.others img {
+    border-radius: 15px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.others-card-text {
+    padding-top: 10px;
+}
+
+/* 6th page (others) end */
+
+
+/* 7th page (advices) start */
+.advice {
+    height: 80vh;
+}
+
+.advice-title {
+    padding: 30px;
+}
+
+.advice-title,
+.advice-card {
+    background-color: var(--primary-color);
+}
+
+.advice-main-part,
+.advice-card-author,
+.advice-card-author-name {
+    display: flex;
+}
+
+.advice-main-part {
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.advice-card {
+    width: 500px;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+
+.advice-card-author {
+    justify-content: space-between;
+}
+
+.advice-card-author-name {
+    justify-content: end;
+    flex-direction: column;
+}
+
+.advice-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* 7th page (advices) end */
+
+/* 8th page (register) start */
+
+
+#register-page,
+#register-page .register-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#register-page {
+    height: 100vh;
+}
+
+.register-field {
+    height: 70vh;
+    width: 40rem;
+    border-radius: 20px;
+    flex-direction: column;
+    background-color: var(--primary-color);
+}
+
+/* 8th page (register) end */
+
+
+
+
+/* footer start */
+
+#footer {
+    background-color: var(--primary-color);
+    height: 22rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-info {
+    height: 250px;
+    width: 400px;
+    display: grid;
+    align-content: space-between;
+}
+
+
+.social-icons {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: black;
+}
+
+#footer iframe {
+    border-radius: 15px;
+}
+
+/* footer end */
+
+
+
+/* media queries start */
+
+@media screen and (max-width: 1260px) {
+    .others {
+        height: auto;
+    }
+
+    .others-main-part {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+
+    .second-page,
+    .courses,
+    .advice,
+    #holiday,
+    #shop,
+    #service {
+        height: auto;
+    }
+
+    .courses {
+        padding: 20px;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+
+    header {
+        justify-content: space-evenly;
+    }
+
+    header #navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background-color: #000000e5;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+
+    header #navbar a {
+        display: block;
+        padding: 1rem;
+        margin: 0.5rem 0;
+        color: white;
+    }
+
+
+    #menu-bar {
+        display: initial;
+    }
+
+    #x {
+        display: none;
+    }
+
+    .introduction-message {
+        left: 40vw;
+        width: 400px;
+    }
+
+    .introduction-message h1 {
+        font-size: 50px;
+    }
+
+    .introduction-message h3 {
+        font-size: 20px;
+    }
+
+    .holiday-main-part {
+        flex-direction: column;
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .courses {
+        gap: 15px;
+    }
+
+    .cources-info:hover,
+    .card:hover,
+    .courses-custom-packages:hover {
+        transform: none;
+    }
+
+    .service-main-part {
+        width: auto;
+        text-align: center;
+    }
+    .shop-main-part {
+        padding: 30px;
+    }
+    .shop-main-part,
+    .service-main-part {
+        gap: 30px;;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .card {
+        width: 200px;
+    }
+
+    #footer {
+        height: 50vh;
+    }
+
+    .contact-info {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .introduction-message {
+        left: 40vw;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        justify-content: space-between;
+        width: 100vw;
+    }
+
+    header .navbar-brand-box {
+        width: auto;
+    }
+
+    .navbar-brand-box h1,
+    .holiday-text h3 {
+        font-size: 20px;
+    }
+
+    .navbar-img {
+        width: 40px;
+        height: 20px;
+    }
+
+    .navbar-company-name {
+        font-size: 25px;
+    }
+
+    .introduction-message {
+        left: 20vw;
+    }
+
+    .holiday-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .holiday-text {
+        width: 90vw;
+    }
+
+    .service-main-part img {
+        width: 100vw;
+    }
+
+    #footer {
+        height: auto;
+        gap: 40px;
+        padding: 30px;
+        align-content: center;
+        justify-content: center;
+    }
+
+    footer iframe {
+        width: 80vw;
+        height: 200px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    header #navbar {
+        width: auto;
+    }
+
+    .introduction-message {
+        left: 10vw;
+    }
+    #service h2 {
+        font-size: 25px;
+    }
+
+    #service h5 {
+        font-size: 15px;
+    }
+    .card-secondary,
+    .others img {
+        width: 300px;
+    }
+
+    .advice-card {
+        width: 100vw;
+    }
+
+    .advice-img {
+        width: 100px;
+        height: 100px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .introduction-message {
+        left: 5vw;
+    }
+}
+
+/* media queries end */
